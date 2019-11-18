@@ -8,5 +8,4 @@ fs.readFile(filePath,function(err,data){
     }
     console.log(data.toString());
 })
-
 console.log("end!!");

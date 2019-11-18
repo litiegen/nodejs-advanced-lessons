@@ -7,7 +7,7 @@ function Dog(dogName){
     var that = this;
     setTimeout(function(){
         that.emit("bark");
-    },3000);
+    },1000);
 }
 Dog.prototype.__proto__ = EventEmitter.prototype;
 var dog = new Dog("kitty");

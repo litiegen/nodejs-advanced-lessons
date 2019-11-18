@@ -11,7 +11,7 @@ http.createServer((req,res)=>{
         showIndex(res);
     }
     else if(pathName=="/list"){
-        showList(res);
+        showList(res);//图片列表
     }
     else if(pathName == '/image.png'){
         showImg(res);
@@ -42,7 +42,7 @@ http.createServer((req,res)=>{
         //     res.end(fileStr);
         // }
         var fileStr = JSON.stringify(files);
-        res.end(fileStr);
+        res.end(fileStr);//json数组
     }
 }).listen(8081)
 

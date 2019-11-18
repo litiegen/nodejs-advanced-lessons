@@ -1,6 +1,6 @@
 var arg1 = process.argv[2];
 if(arg1 == "e"){
-    progcess.exit();
+    process.exit();
 }
 else if(arg1 == "k"){
     process.kill(process.pid);

@@ -14,8 +14,8 @@ http.createServer(function(req,res){
         res.end("<a href = 'http://localhost:8081/new?newId=12&newType=1'>新闻</a>");
     }
     else if(urlObj.pathname == "/new"){
-        console.log(urlObj.pathname);
-        console.log(urlObj.query.newId);
-        console.log(urlObj.query.newType);
+        console.log(urlObj.pathname);// /new
+        console.log(urlObj.query.newId);//12
+        console.log(urlObj.query.newType);//1
     }
 }).listen(8081);

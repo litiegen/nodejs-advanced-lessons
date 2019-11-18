@@ -11,24 +11,26 @@ var server = http.createServer(function(req,res){
     switch(sys){
         case "linux":
             htmlPath = __dirname + "/view/index.html";
+            console.log("linux")
             break;
         case "win32":
             htmlPath = __dirname + "\\view\\index.html"; 
+            console.log("win")
             break;
         default:
             console.log("unkown system");
             break;
     }
 
-    //res.end("接收到客户端请求");
-    // var htmlPath = __dirname + "\\view\\index.html"; 
-    // var htmlContent = fs.readFileSync(htmlPath);//读取文件中代码
-    // htmlContent = htmlContent.toString("utf8");
+    // res.end("接收到客户端请求");
+    var htmlPath = __dirname + "\\view\\index.html"; 
+    var htmlContent = fs.readFileSync(htmlPath);//读取文件中代码
+    htmlContent = htmlContent.toString("utf8");
 
-    // res.writeHead(200,{"Content-Type":"text/html"});
-    // res.write(htmlContent);
-    // res.end();
-    //console.log(htmlContent);
+    res.writeHead(200,{"Content-Type":"text/html"});
+    res.write(htmlContent);
+    res.end();
+    console.log(htmlContent);
 });
 //3.服务监听一个端口
 server.listen(8081);

@@ -12,4 +12,4 @@ var server = http.createServer(function(req,res){
 });
 server.listen(8081);
 console.log("server is listening 8081");
-console.log(process.cwd());
+console.log(process.cwd());//程序所在目录

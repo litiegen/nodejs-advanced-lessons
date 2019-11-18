@@ -9,7 +9,6 @@ if(fs.existsSync(pathName)){
     }
     else{
         delDir(pathName);
-
     }
 }
 else{

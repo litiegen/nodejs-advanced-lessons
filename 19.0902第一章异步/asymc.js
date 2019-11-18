@@ -7,4 +7,4 @@
  */
 setTimeout(function(){
     console.log("异步执行");
-},0);
+},2000);
