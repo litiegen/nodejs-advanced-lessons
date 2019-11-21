@@ -12,7 +12,7 @@ var server = http.createServer(function(req,res){
     if(urlPathName == "/favicon.ico"){
         res.end();
     }
-    else if(urlPathName == "/"){
+    else if(urlPathName == "/qq"){
         var htmlPath = __dirname + "\\view\\index.html"; 
         var htmlContent = fs.readFileSync(htmlPath);//读取文件中代码
         htmlContent = htmlContent.toString("utf8")

@@ -6,11 +6,11 @@ function Dog(dogName){
     this.dogName = dogName;
     var that = this;
     setTimeout(function(){
-        that.emit("bark");
+        that.emit("barkk");
     },1000);
 }
 Dog.prototype.__proto__ = EventEmitter.prototype;
-var dog = new Dog("kitty");
-dog.on("bark",function(){
-    console.log(this.dogName+"  can bark");
+var dog = new Dog("keji");
+dog.on("barkk",function(){
+    console.log(this.dogName+" can bark");
 })
