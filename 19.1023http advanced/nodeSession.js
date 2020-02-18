@@ -38,7 +38,7 @@ function loginIn(req,res){
         if(formObj.username == "zhangsan"&&formObj.pwd == "123"){
             var session = {
                 sessionId:(new Date()).getTime()+Math.random(),
-                exipire:(new Date()).getTime()+600000,//保存时间
+                exipire:(new Date()).getTime()+6000,//保存时间
                 userName:"zhangsan"
             }
             session[session.sessionId]=session;
